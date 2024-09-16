@@ -1,18 +1,22 @@
 ![Python](https://img.shields.io/badge/Python-3.11-green6)
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
-### **Embracing the fuzziness of cognition and behavior and its relationship with environmental factors: A multi-cohort study.**
+## **Embracing the fuzziness of cognition and behavior and its relationship with environmental factors: A multi-cohort study.**
 
-Authors: Anthony Gagnon<sup>1</sup>, Virginie Gillet<sup>1</sup>, Anne-Sandrine Desautels<sup>1</sup>, Jean-François Lepage<sup>1</sup>, Jonathan Posner<sup>2</sup>, Andrea Baccarelli<sup>3</sup>, Maxime Descoteaux<sup>4,5</sup>, Marie Brunet<sup>1</sup>, Larissa Takser<sup>1</sup>.
+Authors: Anthony Gagnon<sup>1</sup>, Virginie Gillet<sup>1</sup>, Anne-Sandrine Desautels<sup>1</sup>, Jean-François Lepage<sup>1</sup>, Andrea Baccarelli<sup>3</sup>, Jonathan Posner<sup>2</sup>, Maxime Descoteaux<sup>4,5</sup>, Marie Brunet<sup>1</sup>, Larissa Takser<sup>1</sup>.
 
-Affiliations:
-<sup>1</sup> Department of Pediatrics, University of Sherbrooke, Québec, Canada
-<sup>2</sup> Department of Psychiatry, Duke University, Durham, NC, USA
-<sup>3</sup> Department of Environmental Health, Harvard T. H. Chan School of Public Health, Boston, MA, USA
-<sup>4</sup> Sherbrooke Connectivity Imaging Lab (SCIL), University of Sherbrooke, Quebec, Canada
+Affiliations:\
+<sup>1</sup> Department of Pediatrics, University of Sherbrooke, Québec, Canada\
+<sup>2</sup> Department of Psychiatry, Duke University, Durham, NC, USA\
+<sup>3</sup> Department of Environmental Health, Harvard T. H. Chan School of Public Health, Boston, MA, USA\
+<sup>4</sup> Sherbrooke Connectivity Imaging Lab (SCIL), University of Sherbrooke, Quebec, Canada\
 <sup>5</sup> Imeka Solutions Inc, Sherbrooke, QC, Canada
 
 The present repository contains all relevant code and scripts to reproduce the results found in Gagnon et al. 2024. 
+
+### **To use the fuzzy profiles in your own population**
+
+In the `models/` folder, you can find the PCA model used for dimensionality reduction of the ABCD cohort. In addition, you will also find the **centroids** needed for the projection of your data in the profiles' space. To use it in your research, simply follow the steps regarding the GESTE and BANDA cohorts in the jupyter notebooks located in the `notebooks/` folder. Briefly, you should follow the residualization, reduction (EFA/CFA), harmonization, and imputation (if needed) steps found in `notebooks/2-DataPreprocessing.ipynb`, then you can proceed with the projection by following the steps in `notebooks/3-FCMeansClustering.ipynb`. **Please raise an issue if you have any questions.**
 
 #### **Setting up**
 
