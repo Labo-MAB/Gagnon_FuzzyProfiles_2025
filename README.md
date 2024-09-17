@@ -3,14 +3,13 @@
 
 ## **Embracing the fuzziness of cognition and behavior and its relationship with environmental factors: A multi-cohort study.**
 
-Authors: Anthony Gagnon<sup>1</sup>, Virginie Gillet<sup>1</sup>, Anne-Sandrine Desautels<sup>1</sup>, Jean-François Lepage<sup>1</sup>, Andrea Baccarelli<sup>3</sup>, Jonathan Posner<sup>2</sup>, Maxime Descoteaux<sup>4,5</sup>, Marie Brunet<sup>1</sup>, Larissa Takser<sup>1</sup>.
+Authors: Anthony Gagnon<sup>1</sup>, Virginie Gillet<sup>1</sup>, Anne-Sandrine Desautels<sup>1</sup>, Jean-François Lepage<sup>1</sup>, Andrea Baccarelli<sup>2</sup>, Jonathan Posner<sup>3</sup>, Maxime Descoteaux<sup>4</sup>, Marie Brunet<sup>1</sup>, Larissa Takser<sup>1</sup>.
 
 Affiliations:\
 <sup>1</sup> Department of Pediatrics, University of Sherbrooke, Québec, Canada\
-<sup>2</sup> Department of Psychiatry, Duke University, Durham, NC, USA\
-<sup>3</sup> Department of Environmental Health, Harvard T. H. Chan School of Public Health, Boston, MA, USA\
-<sup>4</sup> Sherbrooke Connectivity Imaging Lab (SCIL), University of Sherbrooke, Quebec, Canada\
-<sup>5</sup> Imeka Solutions Inc, Sherbrooke, QC, Canada
+<sup>2</sup> Department of Environmental Health, Harvard T. H. Chan School of Public Health, Boston, MA, USA\
+<sup>3</sup> Department of Psychiatry and Behavioral Sciences, Duke University, Durham, NC, USA\
+<sup>4</sup> Sherbrooke Connectivity Imaging Lab (SCIL), University of Sherbrooke, Quebec, Canada
 
 The present repository contains all relevant code and scripts to reproduce the results found in Gagnon et al. 2024. 
 
