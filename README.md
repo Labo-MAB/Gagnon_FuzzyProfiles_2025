@@ -63,57 +63,10 @@ By design, the notebooks are made to be run in a particular order (denoted by th
 <output_directory>
 ├── awp
 │   ├── AWP_ABCD
-│   │   ├── null_distributions_AD.xlsx
-│   │   ├── null_distributions_ADHD.xlsx
-│   │   ├── null_distributions_CD.xlsx
-│   │   ├── null_distributions_DD.xlsx
-│   │   ├── null_distributions_OCD.xlsx
-│   │   ├── null_distributions_ODD.xlsx
-│   │   ├── null_distributions_PSYPATHO.xlsx
-│   │   ├── parameters.txt
-│   │   ├── statistics_AD.xlsx
-│   │   ├── statistics_ADHD.xlsx
-│   │   ├── statistics_CD.xlsx
-│   │   ├── statistics_DD.xlsx
-│   │   ├── statistics_OCD.xlsx
-│   │   ├── statistics_ODD.xlsx
-│   │   └── statistics_PSYPATHO.xlsx
+│   ├── AWP_ABCD_youth
 │   ├── AWP_BANDA
-│   │   ├── null_distributions_AD.xlsx
-│   │   ├── null_distributions_ADHD.xlsx
-│   │   ├── null_distributions_DD.xlsx
-│   │   ├── null_distributions_OCD.xlsx
-│   │   ├── null_distributions_ODD.xlsx
-│   │   ├── null_distributions_PSYPATHO.xlsx
-│   │   ├── parameters.txt
-│   │   ├── statistics_AD.xlsx
-│   │   ├── statistics_ADHD.xlsx
-│   │   ├── statistics_DD.xlsx
-│   │   ├── statistics_OCD.xlsx
-│   │   ├── statistics_ODD.xlsx
-│   │   └── statistics_PSYPATHO.xlsx
 │   ├── AWP_GESTE
-│   │   ├── null_distributions_ADHD.xlsx
-│   │   ├── null_distributions_PSYPATHO.xlsx
-│   │   ├── parameters.txt
-│   │   ├── statistics_ADHD.xlsx
-│   │   └── statistics_PSYPATHO.xlsx
 │   └── AWP_GLOBAL
-│       ├── null_distributions_AD.xlsx
-│       ├── null_distributions_ADHD.xlsx
-│       ├── null_distributions_CD.xlsx
-│       ├── null_distributions_DD.xlsx
-│       ├── null_distributions_OCD.xlsx
-│       ├── null_distributions_ODD.xlsx
-│       ├── null_distributions_PSYPATHO.xlsx
-│       ├── parameters.txt
-│       ├── statistics_AD.xlsx
-│       ├── statistics_ADHD.xlsx
-│       ├── statistics_CD.xlsx
-│       ├── statistics_DD.xlsx
-│       ├── statistics_OCD.xlsx
-│       ├── statistics_ODD.xlsx
-│       └── statistics_PSYPATHO.xlsx
 ├── datagathering
 │   ├── abcd_data.xlsx
 │   ├── abcd_dx_labels.xlsx
@@ -124,277 +77,62 @@ By design, the notebooks are made to be run in a particular order (denoted by th
 │   └── demo_table.xlsx
 ├── fuzzyclustering
 │   ├── ABCDFuzzyCMeans
-│   │   ├── CENTROIDS
-│   │   │   ├── clusters_centroids_10.xlsx
-│   │   │   ├── clusters_centroids_11.xlsx
-│   │   │   ├── clusters_centroids_12.xlsx
-│   │   │   ├── clusters_centroids_13.xlsx
-│   │   │   ├── clusters_centroids_14.xlsx
-│   │   │   ├── clusters_centroids_15.xlsx
-│   │   │   ├── clusters_centroids_16.xlsx
-│   │   │   ├── clusters_centroids_17.xlsx
-│   │   │   ├── clusters_centroids_18.xlsx
-│   │   │   ├── clusters_centroids_19.xlsx
-│   │   │   ├── clusters_centroids_2.xlsx
-│   │   │   ├── clusters_centroids_20.xlsx
-│   │   │   ├── clusters_centroids_3.xlsx
-│   │   │   ├── clusters_centroids_4.xlsx
-│   │   │   ├── clusters_centroids_5.xlsx
-│   │   │   ├── clusters_centroids_6.xlsx
-│   │   │   ├── clusters_centroids_7.xlsx
-│   │   │   ├── clusters_centroids_8.xlsx
-│   │   │   └── clusters_centroids_9.xlsx
-│   │   ├── MEMBERSHIP_DF
-│   │   │   ├── clusters_membership_10.xlsx
-│   │   │   ├── clusters_membership_11.xlsx
-│   │   │   ├── clusters_membership_12.xlsx
-│   │   │   ├── clusters_membership_13.xlsx
-│   │   │   ├── clusters_membership_14.xlsx
-│   │   │   ├── clusters_membership_15.xlsx
-│   │   │   ├── clusters_membership_16.xlsx
-│   │   │   ├── clusters_membership_17.xlsx
-│   │   │   ├── clusters_membership_18.xlsx
-│   │   │   ├── clusters_membership_19.xlsx
-│   │   │   ├── clusters_membership_2.xlsx
-│   │   │   ├── clusters_membership_20.xlsx
-│   │   │   ├── clusters_membership_3.xlsx
-│   │   │   ├── clusters_membership_4.xlsx
-│   │   │   ├── clusters_membership_5.xlsx
-│   │   │   ├── clusters_membership_6.xlsx
-│   │   │   ├── clusters_membership_7.xlsx
-│   │   │   ├── clusters_membership_8.xlsx
-│   │   │   └── clusters_membership_9.xlsx
-│   │   ├── MEMBERSHIP_MAT
-│   │   │   ├── clusters_membership_10.npy
-│   │   │   ├── clusters_membership_11.npy
-│   │   │   ├── clusters_membership_12.npy
-│   │   │   ├── clusters_membership_13.npy
-│   │   │   ├── clusters_membership_14.npy
-│   │   │   ├── clusters_membership_15.npy
-│   │   │   ├── clusters_membership_16.npy
-│   │   │   ├── clusters_membership_17.npy
-│   │   │   ├── clusters_membership_18.npy
-│   │   │   ├── clusters_membership_19.npy
-│   │   │   ├── clusters_membership_2.npy
-│   │   │   ├── clusters_membership_20.npy
-│   │   │   ├── clusters_membership_3.npy
-│   │   │   ├── clusters_membership_4.npy
-│   │   │   ├── clusters_membership_5.npy
-│   │   │   ├── clusters_membership_6.npy
-│   │   │   ├── clusters_membership_7.npy
-│   │   │   ├── clusters_membership_8.npy
-│   │   │   └── clusters_membership_9.npy
-│   │   ├── METRICS
-│   │   │   ├── chi.png
-│   │   │   ├── dbi.png
-│   │   │   ├── dendrogram.png
-│   │   │   ├── fpc.png
-│   │   │   ├── gap.png
-│   │   │   ├── ss.png
-│   │   │   └── wss.png
-│   │   ├── PARALLEL_PLOTS
-│   │   ├── PCA
-│   │   │   ├── barplot_loadings.png
-│   │   │   ├── components.xlsx
-│   │   │   ├── pca_model.pkl
-│   │   │   ├── transformed_data.xlsx
-│   │   │   └── variance_explained.xlsx
-│   │   ├── RADAR_PLOTS
-│   │   │   ├── radar_plot_10clusters.png
-│   │   │   ├── radar_plot_11clusters.png
-│   │   │   ├── radar_plot_12clusters.png
-│   │   │   ├── radar_plot_13clusters.png
-│   │   │   ├── radar_plot_14clusters.png
-│   │   │   ├── radar_plot_15clusters.png
-│   │   │   ├── radar_plot_16clusters.png
-│   │   │   ├── radar_plot_17clusters.png
-│   │   │   ├── radar_plot_18clusters.png
-│   │   │   ├── radar_plot_19clusters.png
-│   │   │   ├── radar_plot_20clusters.png
-│   │   │   ├── radar_plot_2clusters.png
-│   │   │   ├── radar_plot_3clusters.png
-│   │   │   ├── radar_plot_4clusters.png
-│   │   │   ├── radar_plot_5clusters.png
-│   │   │   ├── radar_plot_6clusters.png
-│   │   │   ├── radar_plot_7clusters.png
-│   │   │   ├── radar_plot_8clusters.png
-│   │   │   └── radar_plot_9clusters.png
-│   │   ├── parameters.txt
-│   │   ├── validation_indices.xlsx
-│   │   └── viz_multiple_cluster_nb.png
 │   ├── BANDAProjected
-│   │   ├── BARPLOTS
-│   │   ├── PARALLEL_PLOTS
-│   │   ├── RADAR_PLOTS
-│   │   │   └── radar_plot_7clusters.png
-│   │   ├── parameters.txt
-│   │   └── predicted_membership_matrix.xlsx
 │   ├── GESTEProjected
-│   │   ├── BARPLOTS
-│   │   ├── PARALLEL_PLOTS
-│   │   ├── RADAR_PLOTS
-│   │   │   └── radar_plot_7clusters.png
-│   │   ├── parameters.txt
-│   │   └── predicted_membership_matrix.xlsx
 │   ├── GraphNetwork
-│   │   ├── graph_network_parameters.txt
-│   │   ├── membership_distribution.png
-│   │   └── network_graph_file.gml
 │   ├── GraphNetwork.gml
 │   ├── VizNetwork
-│   │   ├── graph_network.png
-│   │   └── nodes_attributes_parameters.txt
 │   ├── VizNetworkDxABCD
-│   │   ├── graph_network.png
-│   │   ├── graph_network_AD.png
-│   │   ├── graph_network_ADHD.png
-│   │   ├── graph_network_CD.png
-│   │   ├── graph_network_DD.png
-│   │   ├── graph_network_OCD.png
-│   │   ├── graph_network_ODD.png
-│   │   ├── graph_network_PSYPATHO.png
-│   │   └── nodes_attributes_parameters.txt
 │   ├── VizNetworkDxBANDA
-│   │   ├── graph_network.png
-│   │   ├── graph_network_AD.png
-│   │   ├── graph_network_ADHD.png
-│   │   ├── graph_network_CD.png
-│   │   ├── graph_network_DD.png
-│   │   ├── graph_network_OCD.png
-│   │   ├── graph_network_ODD.png
-│   │   ├── graph_network_PSYPATHO.png
-│   │   └── nodes_attributes_parameters.txt
 │   ├── VizNetworkDxGESTE
-│   │   ├── graph_network.png
-│   │   ├── graph_network_ADHD.png
-│   │   ├── graph_network_PSYPATHO.png
-│   │   └── nodes_attributes_parameters.txt
 │   ├── VizNetworkDxGlobal
-│   │   ├── graph_network.png
-│   │   ├── graph_network_AD.png
-│   │   ├── graph_network_ADHD.png
-│   │   ├── graph_network_CD.png
-│   │   ├── graph_network_DD.png
-│   │   ├── graph_network_OCD.png
-│   │   ├── graph_network_ODD.png
-│   │   ├── graph_network_PSYPATHO.png
-│   │   └── nodes_attributes_parameters.txt
 │   └── merged_fcm_data.xlsx
+├── LongitudinalProfiles
+│   ├── datagathering
+│   │   ├── abcd_data_2y.xlsx
+│   │   ├── abcd_data_4y.xlsx
+│   │   ├── abcd_data_baseline.xlsx
+│   │   ├── abcd_dx_labels_2y.xlsx
+│   │   └── abcd_dx_labels_baseline.xlsx
+│   ├── datapreprocessing
+│   │   ├── ABCD_2y_Apply
+│   │   ├── ABCD_2y_CFA
+│   │   ├── ABCD_2y_EFA
+│   │   ├── ABCD_4y_Apply
+│   │   ├── ABCD_4y_CFA
+│   │   ├── ABCD_4y_EFA
+│   │   ├── abcd_2y_preprocessed.xlsx
+│   │   ├── abcd_2y_residualized.xlsx
+│   │   ├── abcd_4y_preprocessed.xlsx
+│   │   └── abcd_4y_residualized.xlsx
+│   ├── demographics
+│   │   └── demo_table_followups.xlsx
+│   └── fuzzyclustering
+│       ├── ABCD_2y_FCM
+│       ├── ABCD_4y_FCM
+│       ├── GraphNetwork2y
+│       ├── GraphNetwork4y
+│       ├── RadarPlot2y.png
+│       ├── RadarPlot4y.png
+│       ├── Tukey_results_2y.xlsx
+│       ├── Tukey_results_4y.xlsx
+│       ├── VizNetwork2y
+│       ├── VizNetwork4y
+│       ├── anova_2y.xlsx
+│       ├── anova_4y.xlsx
+│       ├── fcm_2y.xlsx
+│       ├── fcm_4y.xlsx
+│       └── silhouette_scores.png
 ├── preprocessing
 │   ├── ABCD_CFA
-│   │   ├── CFA_report
-│   │   │   ├── css
-│   │   │   │   └── bootstrap.min.css
-│   │   │   ├── js
-│   │   │   │   └── bootstrap.min.js
-│   │   │   ├── plots
-│   │   │   │   ├── 1
-│   │   │   │   ├── 1.png
-│   │   │   │   ├── 2
-│   │   │   │   ├── 2.png
-│   │   │   │   ├── 3
-│   │   │   │   ├── 3.png
-│   │   │   │   ├── 4
-│   │   │   │   └── 4.png
-│   │   │   └── report.html
-│   │   ├── cfa_model.pkl
-│   │   ├── cfa_scores.xlsx
-│   │   ├── cfa_stats.xlsx
-│   │   ├── parameters.txt
-│   │   ├── semplot
-│   │   └── semplot.png
 │   ├── ABCD_CFA_Apply
-│   │   ├── parameters.txt
-│   │   └── transformed_dataset.xlsx
 │   ├── ABCD_EFA
-│   │   ├── EFA_model.pkl
-│   │   ├── EFA_scores.xlsx
-│   │   ├── Heatmap.png
-│   │   ├── barplot_loadings.png
-│   │   ├── communalities.xlsx
-│   │   ├── eigenvalues.xlsx
-│   │   ├── horns_parallel_screeplot.png
-│   │   ├── loadings.xlsx
-│   │   ├── parameters.txt
-│   │   ├── scree_plot.png
-│   │   ├── test_dataset.xlsx
-│   │   └── train_dataset.xlsx
 │   ├── BANDA_CFA
-│   │   ├── CFA_report
-│   │   │   ├── css
-│   │   │   │   └── bootstrap.min.css
-│   │   │   ├── js
-│   │   │   │   └── bootstrap.min.js
-│   │   │   ├── plots
-│   │   │   │   ├── 1
-│   │   │   │   ├── 1.png
-│   │   │   │   ├── 2
-│   │   │   │   ├── 2.png
-│   │   │   │   ├── 3
-│   │   │   │   ├── 3.png
-│   │   │   │   ├── 4
-│   │   │   │   └── 4.png
-│   │   │   └── report.html
-│   │   ├── cfa_model.pkl
-│   │   ├── cfa_scores.xlsx
-│   │   ├── cfa_stats.xlsx
-│   │   ├── parameters.txt
-│   │   ├── semplot
-│   │   └── semplot.png
 │   ├── BANDA_CFA_Apply
-│   │   ├── parameters.txt
-│   │   └── transformed_dataset.xlsx
 │   ├── BANDA_EFA
-│   │   ├── EFA_model.pkl
-│   │   ├── EFA_scores.xlsx
-│   │   ├── Heatmap.png
-│   │   ├── barplot_loadings.png
-│   │   ├── communalities.xlsx
-│   │   ├── eigenvalues.xlsx
-│   │   ├── horns_parallel_screeplot.png
-│   │   ├── loadings.xlsx
-│   │   ├── parameters.txt
-│   │   ├── scree_plot.png
-│   │   ├── test_dataset.xlsx
-│   │   └── train_dataset.xlsx
 │   ├── GESTE_CFA
-│   │   ├── CFA_report
-│   │   │   ├── css
-│   │   │   │   └── bootstrap.min.css
-│   │   │   ├── js
-│   │   │   │   └── bootstrap.min.js
-│   │   │   ├── plots
-│   │   │   │   ├── 1
-│   │   │   │   ├── 1.png
-│   │   │   │   ├── 2
-│   │   │   │   ├── 2.png
-│   │   │   │   ├── 3
-│   │   │   │   ├── 3.png
-│   │   │   │   ├── 4
-│   │   │   │   └── 4.png
-│   │   │   └── report.html
-│   │   ├── cfa_model.pkl
-│   │   ├── cfa_scores.xlsx
-│   │   ├── cfa_stats.xlsx
-│   │   ├── parameters.txt
-│   │   ├── semplot
-│   │   └── semplot.png
 │   ├── GESTE_CFA_Apply
-│   │   ├── parameters.txt
-│   │   └── transformed_dataset.xlsx
 │   ├── GESTE_EFA
-│   │   ├── EFA_model.pkl
-│   │   ├── EFA_scores.xlsx
-│   │   ├── Heatmap.png
-│   │   ├── barplot_loadings.png
-│   │   ├── communalities.xlsx
-│   │   ├── eigenvalues.xlsx
-│   │   ├── horns_parallel_screeplot.png
-│   │   ├── loadings.xlsx
-│   │   ├── parameters.txt
-│   │   ├── scree_plot.png
-│   │   ├── test_dataset.xlsx
-│   │   └── train_dataset.xlsx
 │   ├── abcd_data_preprocessed.xlsx
 │   ├── abcd_data_residualized.xlsx
 │   ├── banda_data_preprocessed.xlsx
@@ -409,10 +147,14 @@ By design, the notebooks are made to be run in a particular order (denoted by th
 │   ├── ABCD_coef5.png
 │   ├── ABCD_coef6.png
 │   ├── ABCD_coef7.png
+│   ├── ABCD_coef_heatmap.png
+│   ├── ABCD_env_loadings.png
 │   ├── ABCD_plsr_coef.xlsx
 │   ├── ABCD_plsr_coef_pval.xlsx
 │   ├── ABCD_plsr_coef_pval_fdr_corrected.xlsx
+│   ├── ABCD_plsr_scatter.png
 │   ├── ABCD_plsr_stats.xlsx
+│   ├── ABCD_profile_loadings.png
 │   ├── GESTE_coef1.png
 │   ├── GESTE_coef2.png
 │   ├── GESTE_coef3.png
@@ -420,16 +162,34 @@ By design, the notebooks are made to be run in a particular order (denoted by th
 │   ├── GESTE_coef5.png
 │   ├── GESTE_coef6.png
 │   ├── GESTE_coef7.png
+│   ├── GESTE_coef_heatmap.png
+│   ├── GESTE_env_loadings.png
 │   ├── GESTE_plsr_coef.xlsx
 │   ├── GESTE_plsr_coef_pval.xlsx
 │   ├── GESTE_plsr_coef_pval_fdr_corrected.xlsx
-│   └── GESTE_plsr_stats.xlsx
+│   ├── GESTE_plsr_scatter.png
+│   ├── GESTE_plsr_stats.xlsx
+│   ├── GESTE_profile_loadings.png
+│   ├── abcd_barplot_dx.png
+│   ├── all_studies_barplot.png
+│   ├── banda_barplot_dx.png
+│   ├── circular_ABCD_dx.png
+│   ├── circular_BANDA_dx.png
+│   ├── circular_GESTE_dx.png
+│   └── circular_barplot_all.png
 └── viz
     ├── ANOVA_results.xlsx
+    ├── ANOVA_results_cohorts.xlsx
+    ├── NetworkABCD_AD_youth.png
+    ├── NetworkABCD_DD_youth.png
+    ├── NetworkABCD_PSYPATHO_youth.png
     ├── NetworkCohort.png
     ├── RadarPlotABCD.png
     ├── RadarPlotBANDA.png
     ├── RadarPlotCombined.png
-    └── RadarPlotGESTE.png
+    ├── RadarPlotGESTE.png
+    ├── Tukey_results.xlsx
+    └── Tukey_results_cohorts.xlsx
+
 
 ```
