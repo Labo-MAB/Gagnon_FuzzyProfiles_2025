@@ -13,10 +13,6 @@ Affiliations:\
 
 The present repository contains all relevant code and scripts to reproduce the results found in Gagnon et al. 2024. 
 
-### **To use the fuzzy profiles in your own population**
-
-In the `models/` folder, you can find the PCA model used for dimensionality reduction of the ABCD cohort. In addition, you will also find the **centroids** needed for the projection of your data in the profiles' space. To use it in your research, simply follow the steps regarding the GESTE and BANDA cohorts in the jupyter notebooks located in the `notebooks/` folder. Briefly, you should follow the residualization, reduction (EFA/CFA), harmonization, and imputation (if needed) steps found in `notebooks/2-DataPreprocessing.ipynb`, then you can proceed with the projection by following the steps in `notebooks/3-FCMeansClustering.ipynb`. **Please raise an issue if you have any questions.**
-
 #### **Setting up**
 
 If you do not have the required packages installed, it is recommended that you setup a new python virtual environment in which we will install the required dependencies. 
@@ -54,6 +50,62 @@ AddNodesAttributes -h
 **Installing `GraphViz`**
 
 For visualization of semplots from the `semopy` python package, `GraphViz` is required. If you do not have it installed, please run the following if you are on Linux `sudo apt get graphviz` or `brew install graphviz` if you are on MacOS.
+
+### **Example with dummy data**
+
+If you do not have access to the data used in this study, but still want to try out fuzzy clustering, here is a few lines of code to perform fuzzy clustering on synthetic data.
+
+```python --run
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+from neurostatx.clustering.fuzzy import fuzzyCmeans
+
+# Define three centroids in 2D space.
+centroids = np.array([[1, 1], [2, 2], [3, 3]])
+
+# Generate data around the centroids (600 samples).
+np.random.seed(1234)  # For reproducibility
+data = np.concatenate([
+    centroids[i] + 0.2 * np.random.randn(200, 2)
+    for i in range(len(centroids))
+])
+
+# Save as a dataframe.
+data_df = pd.DataFrame(data, columns=['x', 'y'])
+data_df.index.name = 'sample'
+data_df.to_csv("data.csv", index=True, header=True)
+
+# Fit the fuzzy C-means model for up to 5 clusters.
+cntr, u, _, _, ss, _, _, _, _ = fuzzyCmeans(data, max_cluster=5, m=2, maxiter=100, error=1e-4,
+                                            metric='euclidean', output="./", processes=4,
+                                            verbose=1)
+
+# Plot the data and the centroids.
+fig, ax = plt.subplots(1, 2, figsize=(8, 4))
+ax[0].scatter(data[:, 0], data[:, 1], s=50, alpha=0.5, color='black')
+ax[0].scatter(centroids[:, 0], centroids[:, 1], s=100, color='green', marker='x')
+ax[0].set_title("Data and ground-truth centroids")
+ax[1].scatter(data[:, 0], data[:, 1], s=50, alpha=0.5,
+              c=np.argmax(u[1], axis=0))
+ax[1].scatter(centroids[:, 0], centroids[:, 1], s=100, color='green', marker='x')
+ax[1].scatter(cntr[1][:, 0], cntr[1][:, 1], s=100, color='red', marker='x')
+plt.show()
+```
+![alt text](/utils/image.png)
+
+Alternatively, if you want to use the CLI script on an existing dataframe (or the one generated in the previous code snippet), you can call it directly in the terminal, and results will be saved in the `test/` folder.
+
+```bash
+FuzzyClustering --in-dataset data.csv --id-column sample \
+    --desc-columns 0 --out-folder test/ \
+    --m 2 --k 5 --maxiter 100
+```
+
+### **To use the fuzzy profiles in your own population**
+
+In the `models/` folder, you can find the PCA model used for dimensionality reduction of the ABCD cohort. In addition, you will also find the **centroids** needed for the projection of your data in the profiles' space. To use it in your research, simply follow the steps regarding the GESTE and BANDA cohorts in the jupyter notebooks located in the `notebooks/` folder. Briefly, you should follow the residualization, reduction (EFA/CFA), harmonization, and imputation (if needed) steps found in `notebooks/2-DataPreprocessing.ipynb`, then you can proceed with the projection by following the steps in `notebooks/3-FCMeansClustering.ipynb`. **Please raise an issue if you have any questions.**
 
 #### **Output file structure.**
 
