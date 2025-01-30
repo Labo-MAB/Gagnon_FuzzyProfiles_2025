@@ -1,7 +1,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11-green6)
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
-## **Embracing the fuzziness of cognition and behavior and its relationship with environmental factors: A multi-cohort study.**
+## **Beyond Discrete Classifications: A Computational Approach to the Continuum of Cognition and Behavior in Children**
 
 Authors: Anthony Gagnon<sup>1</sup>, Virginie Gillet<sup>1</sup>, Anne-Sandrine Desautels<sup>1</sup>, Jean-François Lepage<sup>1</sup>, Andrea Baccarelli<sup>2</sup>, Jonathan Posner<sup>3</sup>, Maxime Descoteaux<sup>4</sup>, Marie Brunet<sup>1</sup>, Larissa Takser<sup>1</sup>.
 
@@ -11,7 +11,7 @@ Affiliations:\
 <sup>3</sup> Department of Psychiatry and Behavioral Sciences, Duke University, Durham, NC, USA\
 <sup>4</sup> Sherbrooke Connectivity Imaging Lab (SCIL), University of Sherbrooke, Quebec, Canada
 
-The present repository contains all relevant code and scripts to reproduce the results found in Gagnon et al. 2024. 
+The present repository contains all relevant code and scripts to reproduce the results found in Gagnon et al. 2025. 
 
 #### **Setting up**
 
